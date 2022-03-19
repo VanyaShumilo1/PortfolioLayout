@@ -1,0 +1,21 @@
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 338px;
+    width: 24px;
+    z-index: 5;
+    position: fixed;
+    top: 226px;
+    left: 50px;
+    &__text {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+    &__line {
+        width: 2px;
+        height: 70px;
+        background: #000;
+    }
+}
