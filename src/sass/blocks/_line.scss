@@ -3,4 +3,7 @@
     height: 2px;
     background: $main-orange;
     margin: 25px auto 0px auto;
+    &_left {
+        margin: 25px auto 0px 0px;
+    }
 }

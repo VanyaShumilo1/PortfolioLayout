@@ -12,3 +12,18 @@
         z-index: -1;
     }
 }
+
+@mixin orange-cirlce-left {
+    &::before {
+        content: "";
+        height: 36px;
+        width: 36px;
+        border-radius: 100%;
+        background: $main-orange;
+        position: absolute;
+        top: -15%;
+        left: 10%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
