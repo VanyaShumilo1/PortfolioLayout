@@ -10,3 +10,9 @@ close.addEventListener("click", function(){
     menu.classList.remove("menu_active");
 });
 
+const counter = document.querySelectorAll(".skills__progress-counter");
+const line = document.querySelectorAll(".skills__progress-bar span");
+
+counter.forEach((item, i) => {
+    line[i].style.width = item.innerHTML;
+});

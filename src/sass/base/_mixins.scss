@@ -1,0 +1,14 @@
+@mixin orange-cirlce {
+    &::before {
+        content: "";
+        height: 36px;
+        width: 36px;
+        border-radius: 100%;
+        background: $main-orange;
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
