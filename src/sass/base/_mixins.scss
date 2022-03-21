@@ -27,3 +27,18 @@
         z-index: -1;
     }
 }
+
+@mixin orange-cirlce-left-15px {
+    &::before {
+        content: "";
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background: $main-orange;
+        position: absolute;
+        top: 7%;
+        left: -8%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
