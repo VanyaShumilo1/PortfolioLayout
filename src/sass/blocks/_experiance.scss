@@ -1,0 +1,75 @@
+.experiance{
+    margin-top: 126px;
+    &__wrapper {
+        margin: 60px 90px 0px 90px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+    }
+    &__item {
+        padding-left: 43px;
+        position: relative;
+        padding-top: 45px;
+        &::before {
+            content: "";
+            height: calc(100% + 8px);
+            position: absolute;
+            width: 2px;
+            left:0;
+            top: -8px;
+            background: #000;
+        }
+        
+        &-title {
+            padding-left: 35px;
+            position: relative;
+            &::before {
+                content: "";
+                height: 15px;
+                width: 15px;
+                border-radius: 100%;
+                background: $main-orange;
+                position: absolute;
+                top: 23%;
+                left: -6px;
+            }    
+        }
+        &-header {
+            padding-left: 56px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 41px;
+                height: 2px;
+                background: #000;
+                top: 13px;
+                left: -43px;
+            }
+        }
+        &-icon {
+            position: absolute;
+            left: 13px;
+            top: 10px;
+            @include orange-cirlce-left;
+            &::before {
+                top: -50%;
+            }
+        }
+
+        &-text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 12px;
+        }
+    }
+}
+
+h2 {
+    margin-bottom: 0;
+}
