@@ -1,3 +1,5 @@
+// const htmlmin = require("gulp-htmlmin");
+
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".menu");
 const close = document.querySelector(".menu__close");
@@ -16,3 +18,4 @@ const line = document.querySelectorAll(".skills__progress-bar span");
 counter.forEach((item, i) => {
     line[i].style.width = item.innerHTML;
 });
+
