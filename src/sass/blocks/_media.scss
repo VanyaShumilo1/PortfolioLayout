@@ -1,7 +1,6 @@
 @media (max-width: 1200px) {
     .container {
         width: 960px;
-        border: 1px solid red;
     }
     .side-panel {
         display: none;
@@ -61,14 +60,79 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 }
 
-@media (max-width: 575px) {
-
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0  10px;
+    }
+    .title {
+        font-size: 24px;
+        line-height: 36px;
+        &_fz48 {
+            font-size: 26px;
+            line-height: 39px;
+        }
+        &_fz16 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &_fz14 {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &_fz20 {
+            line-height: 30px;
+        }
+    }
+    .header {
+        background: url(../img/bg.jpg) 60%/cover no-repeat;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .biography {
+        &__wrapper {
+            grid-template-columns: 300px;
+            column-gap: 0;
+        }
+        &__photo img{
+            width: 100%;
+            margin-bottom: 46px;
+        }
+        &__skills {
+            grid-template-columns: 260px;
+            padding: 20px 0 0 15px;
+        }
+    }
+    .experiance{
+        &__wrapper {
+            margin: 40px 0 0 0;
+            grid-template-columns: 300px;
+            row-gap: 40px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            margin-top: 60px;
+            grid-template-columns: 270px;
+            column-gap: 0;
+            row-gap: 20px;
+        }
+        &__progress {
+            grid-template-columns: 270px;
+            column-gap: 0;
+        }
+    }
+    
 }
