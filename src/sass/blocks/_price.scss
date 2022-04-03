@@ -8,7 +8,7 @@
         column-gap: 250px;
         grid-template-rows: repeat(3, 44px);
         row-gap: 17px;
-        width: 1040px;
+        max-width: 1040px;
     }
     &__item {
         position: relative;
